@@ -1,0 +1,14 @@
+<!-- exhibition.component.html -->
+<div class="exhibition-section">
+    <h2>Exhibitions</h2>
+    <div class="exhibition-grid">
+      <div class="exhibition-item" *ngFor="let exhibition of exhibitions">
+        <img [src]="exhibition.image" alt="{{ exhibition.title }}" class="exhibition-item-image">
+        <div class="exhibition-item-info">
+          <h3>{{ exhibition.title }}</h3>
+          <p>{{ exhibition.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

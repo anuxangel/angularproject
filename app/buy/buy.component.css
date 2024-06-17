@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 50%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1 s0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom:10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-round;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5c81b8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #4a64f6;
+  }
+  
+  .purchaseMessage {
+    margin-top: 20px;
+    text-align: left down;
+    color: rgb(56, 88, 217);
+    font-size: 16px;
+  }
+  

@@ -1,0 +1,131 @@
+/* General styles */
+body {
+    font-family: 'Lato';
+    margin: 0;
+    padding: 0;
+    background-color: #fa9292da;
+    color: #555;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+    opacity: 0; /* Initially hide sections */
+    animation: fadeInUp 1s ease-out forwards; /* Fade-in and slide up animation */
+}
+
+h2 {
+    color:#181717;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+}
+
+h3 {
+    color: #181717;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 30px);
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    background-color: #fdfdfd;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #FF6F61;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: calc(100% - 30px);
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #e95d52;
+    transform: scale(1.05); /* Increased scale on hover */
+}
+.alert-success {
+    color: green;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

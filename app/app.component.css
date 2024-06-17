@@ -1,0 +1,52 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://images.unsplash.com/photo-1606787366850-de6330128bfc') no-repeat center center fixed; /* Example background image URL */
+  background-size: cover; /* Ensure the image covers the whole background */
+}
+
+.home-page {
+  text-align: center;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.navigation {
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

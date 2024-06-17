@@ -1,0 +1,50 @@
+/* styles.css or your custom CSS file */
+
+.login-wrapper {
+  background-image: url("/assets/l3.jpg");
+  background-size: center; /* Change 'cover' to 'contain' */
+  background-position:flex;
+  background-repeat: no-repeat; /* Ensure background image is not repeated */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: rgba(230, 123, 189, 0.13);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #0a0a0a;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1d3c8b;
+  color: #f3f4f6;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a2962;
+}

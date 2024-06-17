@@ -1,0 +1,13 @@
+<!-- shop.component.html -->
+<div class="container">
+  <div class="shop" *ngFor="let item of shopItems">
+    <h2>{{ item.title }}</h2>
+    <p>{{ item.description }}</p>
+    <p class="price">Price: ${{ item.price }}</p>
+    <img [src]="item.image" alt="{{ item.title }}">
+    <div class="button-container">
+      <button (click)="addToCart(item)" class="addtocart">Add to Cart</button>
+      <button (click)="buyNow(item)" class="buynow">Buy Now</button>
+    </div>
+  </div>
+</div>

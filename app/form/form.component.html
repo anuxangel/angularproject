@@ -1,0 +1,49 @@
+<div class="container">
+  <h2>Get your art here!</h2>
+  <form [formGroup]="form" (ngSubmit)="book()">
+    <div class="form-group">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" formControlName="fullName" class="form-control">
+      <div class="error-message" *ngIf="form.get('fullName')?.invalid && form.get('fullName')?.touched">
+        Full name is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email" class="form-control">
+      <div class="error-message" *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+        Invalid email format
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address" formControlName="address" class="form-control"></textarea>
+      <div class="error-message" *ngIf="form.get('address')?.invalid && form.get('address')?.touched">
+        Address is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="artwork">Artwork:</label>
+      <select id="artwork" formControlName="artwork" (change)="calculatePrice()" class="form-control">
+        <option value="">Select Artwork</option>
+        <option value="artwork1">Abstract Painting</option>
+        <option value="artwork2">Modern Sculpture</option>
+        <option value="artwork3">Digital Art Print</option>
+      </select>
+      <div class="error-message" *ngIf="form.get('artwork')?.invalid && form.get('artwork')?.touched">
+        Artwork selection is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price:</label>
+      <div id="price">{{ form.get('price')?.value }}</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Place order</button>
+    <div *ngIf="purchaseMessage" class="alert alert-info">{{ purchaseMessage }}</div>
+  </form>
+</div>

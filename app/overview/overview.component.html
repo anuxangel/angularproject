@@ -1,0 +1,48 @@
+<div class="container">
+    <section id="home">
+      <h2>Welcome to ArtWaves</h2>
+      <p>Step into our Art Gallery website, where the digital canvas awaits with a harmonious blend of contemporary design and timeless artistic charm. From the homepage's elegant typography to meticulously curated masterpieces, each click unveils a world of abstract musings, lifelike portraits, and awe-inspiring sculptures. Virtual exhibitions transcend physical boundaries, offering immersive tours that reveal intricate details and artistic narratives. Engage with a global community through live events and forums, celebrating creativity's transformative power. Whether discovering art anew or enriching your collection, our website promises to inspire, connect, and ignite your passion for the arts with every visit. Explore Owings Art & Ink - Urban Art Gallery, where emotions find expression and creativity flourishes. Here, art serves as a catalyst for personal growth and relaxation, fostering a sense of achievement and community through shared experiences. Engage with our diverse collection, from paintings to sculptures, and discover how each piece inspires reflection and insight into life and society. Connect with us to delve deeper into the transformative power.</p>
+    </section>
+    
+    <section id="gallery">
+      <h3>Owings Art & Ink - Urban Art Gallery</h3>
+      <ul>
+        <li>
+          <span></span> Expression of Emotions: Art allows individuals to express their emotions freely. You have to indulge in it so that your feelings will be happily secured.
+        </li>
+        <li>
+          <span></span> Sense of Achievement: Creating art, whether it's painting, sculpting, or any other form, provides a sense of accomplishment and pride. This feeling of achievement can boost self-esteem.
+        </li>
+        <li>
+          <span></span> Mindfulness and Relaxation: Engaging with art, such as through painting, drawing, or even viewing artworks, promotes mindfulness and relaxation. It encourages individuals to focus on the present moment.
+        </li>
+        <li>
+          <span></span> Connection and Community: Art brings people together, whether through exhibitions, workshops, or online communities. Sharing artistic experiences and perspectives creates connections.
+        </li>
+        <li>
+          <span></span> Inspiration and Creativity: Experiencing art stimulates creativity and inspires new ideas. This creative process fosters personal growth and exploration.
+        </li>
+        <li>
+          <span></span> Reflection and Insight: Art often prompts reflection on life, society, and the human condition. It encourages introspection and deepens understanding, leading to personal insights.
+        </li>
+      </ul>
+    </section>
+    
+    <section id="contact">
+      <h3>For further details Contact Us</h3>
+      <p>Have questions or need assistance? Contact us via the form below:</p>
+      <form (ngSubmit)="onSubmitContact(contactForm)" #contactForm="ngForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ngModel required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" ngModel required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" ngModel rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p *ngIf="messageSent" id="successMessage" class="alert alert-success">Message successfully sent!</p>
+      <p *ngIf="!messageSent && contactForm.submitted && !contactForm.valid" id="errorMessage" class="alert alert-danger">Please fill in the details!</p>
+    </section>
+    <h4>Contact us for more details: 0416-7890</h4>
+  </div>
+  
